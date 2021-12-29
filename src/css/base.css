@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Athiti', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    /* height: 1000px; */
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+:root {
+    --primary-color: #cfa671;
+    --transition: all 0.2s ease-in;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 1.4rem;
+    border: 2px solid var(--primary-color);
+    padding: 12px 30px;
+    border-radius: 3px;
+    margin-top: 10px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
