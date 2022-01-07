@@ -46,6 +46,17 @@
         display: block;
     }
 
+    .navbar-dropdown-menu{
+        box-shadow: none;
+        width: 100%;
+        position: static;
+    }
+
+    .navbar-dropdown-menu a{
+        line-height: 30px;
+    }
+
+
     .navbar-link ul li a:hover{
         padding-left: 30px;
     }
