@@ -63,8 +63,8 @@ const Form = () => {
                     <input type="text" className="form-contact-input" placeholder="Your Email" name="email" onChange={handleChange} />
                     {errors.email && <p className="form-contact-error">{errors.email}</p>}
                 </div>
-                <select className="form-contact-select">
-                    <option disabled defaultValue>Please Select Number Of Person*</option>
+                <select className="form-contact-select" required data-error="Please Select Number Of Person*">
+                    <option disabled selected>Please Select Number Of Person*</option>
                     <option value="1">1</option>
                     <option value="1">2</option>
                     <option value="1">3</option>
