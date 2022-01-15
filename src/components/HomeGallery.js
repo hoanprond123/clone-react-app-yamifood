@@ -28,7 +28,6 @@ const HomeGallery = () => {
 
     }, [index])
 
-    console.log(tempImg)
 
     const newImg = () =>{
         const {image} = data[index]

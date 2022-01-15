@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useState} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
@@ -10,8 +10,11 @@ import Gallery from './pages/Gallery'
 import Blog from './pages/Blog'
 import BlogSingle from './pages/BlogSingle'
 import Navbar from './components/Navbar'
+import data from './components/dataBlog'
 
 function App() {
+
+
   return (
     <Router>
       <Navbar />

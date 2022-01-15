@@ -6,17 +6,19 @@ const allCategory = ['all', ...new Set(items.map((item) => item.category))]
 const HomeMenu = () => {
     const [menuItems, setMenuItems] = useState(items)
     const [categories, setCategory] = useState(allCategory)
-    const [color, setColor] = useState(false)
-
+    const [color, setColor] = useState(categories[0])
 
     const filterItems = (category ,index) => {
+        setColor(category)
         if(category === 'all') {
             setMenuItems(items)
             return
         }
         const newItems = items.filter(item => item.category === category )
         setMenuItems(newItems)
+        
     }
+
 
 
     return (
@@ -29,7 +31,7 @@ const HomeMenu = () => {
                 <div className="home-menu-categories-container">
                     {categories.map((category, index) => {
                         return (
-                            <button key={index} className={`home-menu-categories-item`}  onClick={() => filterItems(category, index)}>{category}</button>
+                            <button key={index} className={category === color ? 'home-menu-categories-item home-menu-categories-item-active' : 'home-menu-categories-item'}  onClick={() => filterItems(category, index)}>{category}</button>
                         )
                     })}
                 </div>

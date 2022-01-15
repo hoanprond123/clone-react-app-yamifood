@@ -106,6 +106,25 @@
     .home-slider-icon-next{
         padding: 5px;
     }
+
+    .react-datepicker__month-container{
+        width: 350px;
+    }
+    
+    .react-datepicker__day-name,
+    .react-datepicker__day{
+        width: 4rem !important;
+        line-height: 4rem !important;
+        font-size: 1.5rem !important;
+    }
+    
+    .react-datepicker__navigation{
+        top: 12px !important;
+    }
+    
+    .react-datepicker__current-month{
+        font-size: 1.8rem !important;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1239px){

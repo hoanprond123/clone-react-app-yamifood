@@ -1,10 +1,17 @@
 import React from 'react'
-
-function BlogSingle() {
+import Header from '../components/Header'
+import HomeContact from '../components/HomeContact'
+import HomeFooter from '../components/HomeFooter'
+import BlogDetails from '../components/BlogDetails'
+function BlogSingle({handleArticle}) {
+    const heading = 'Blog'
     return (
-        <div>
-            <h2>Blog Single</h2>
-        </div>
+        <>
+            <Header heading={heading} />
+            <BlogDetails handleArticle={handleArticle} />
+            <HomeContact />
+            <HomeFooter />
+        </>
     )
 }
 

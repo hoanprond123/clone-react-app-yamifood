@@ -61,7 +61,6 @@ function ReservationPages() {
                     <div className="col l-6 m-6 c-12 reservation-pages-body-item">
                         <span>Book a table</span>
                         <div className="reservation-pages-body-calendar-container">
-                            {/* <input type="text" className="reservation-pages-body-calendar" /> */}
                             <DatePicker className="reservation-pages-body-calendar" selected={selectedDate} onChange={date => setSelectedDate(date)} />
                         </div>
                         <div className="reservation-pages-body-time-container">

@@ -1,10 +1,17 @@
 import React from 'react'
-
+import Header from '../components/Header'
+import HomeContact from '../components/HomeContact'
+import BlogArticle from '../components/BlogArticle'
+import HomeFooter from '../components/HomeFooter'
 function Blog() {
+    const heading = "Blog"
     return (
-        <div>
-            <h2>Blog</h2>
-        </div>
+        <>
+            <Header heading={heading} />
+            <BlogArticle />
+            <HomeContact />
+            <HomeFooter />
+        </>
     )
 }
 
