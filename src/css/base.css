@@ -37,6 +37,7 @@ ul{
     margin-top: 10px;
     transition: var(--transition);
     cursor: pointer;
+    background-color: transparent   
 }
 
 .btn:hover{

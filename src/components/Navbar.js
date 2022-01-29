@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
-import { AiFillCaretUp, FaBars } from 'react-icons/fa'
+import { FaBars } from 'react-icons/fa'
 import { AiFillCaretDown } from 'react-icons/ai'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import img1 from '../store/images/logo.png'
 const Navbar = () => {
 
@@ -61,8 +61,14 @@ const Navbar = () => {
         backgroundColor: "#d0a772",
         color: "#fff",
     }
+
+    const handleClick = () => {
+        // setShowDropDown(false)
+        // setShowDropDownRight(false)
+    }
+
     return (
-        <nav className="navbar">
+        <nav className="navbar" onClick={handleClick}>
             <div className="grid wide">
                 <div className="container">
                     <NavLink to="/" className="navbar-img">
@@ -104,6 +110,9 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <NavLink to="/contact" onClick={() => handleLinks()} style={({ isActive }) => isActive ? activeStyle : undefined}>Contact</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/dashboard" onClick={() => handleLinks()} style={({ isActive }) => isActive ? activeStyle : undefined}>User</NavLink>
                             </li>
                         </ul>
                     </div>

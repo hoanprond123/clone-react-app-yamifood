@@ -4,14 +4,17 @@ import Map from '../components/Map'
 import Form from '../components/Form'
 import HomeContact from '../components/HomeContact'
 import HomeFooter from '../components/HomeFooter'
+import Navbar from '../components/Navbar'
+
 function Contact() {
     const heading = "Contact"
     return (
         <>
+            <Navbar />
             <Header heading={heading} />
-            <div className="contact-map">
+            {/* <div className="contact-map">
                 <Map />
-            </div>
+            </div> */}
             <Form />
             <HomeContact />
             <HomeFooter />

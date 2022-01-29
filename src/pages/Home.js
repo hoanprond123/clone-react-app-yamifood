@@ -7,9 +7,11 @@ import HomeGallery from '../components/HomeGallery'
 import HomeReviews from '../components/HomeReviews'
 import HomeContact from '../components/HomeContact'
 import HomeFooter from '../components/HomeFooter'
+import Navbar from '../components/Navbar'
 const Home = () => {
     return (
         <>
+            <Navbar />
             <Slider />
             <HomeAbout />
             <HomeSlogan />

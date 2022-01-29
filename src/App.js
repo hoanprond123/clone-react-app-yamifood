@@ -11,15 +11,17 @@ import Blog from './pages/Blog'
 import BlogSingle from './pages/BlogSingle'
 import Navbar from './components/Navbar'
 import data from './components/dataBlog'
-
+import SignUp from './pages/SignUp'
+import Login from './pages/Login'
+import DashBoard from './pages/DashBoard'
+import PrivateRoute from './components/PrivateRoute'
+import ForgotPassword from './pages/ForgotPassword';
 function App() {
 
 
   return (
     <Router>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
@@ -28,6 +30,11 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog-single" element={<BlogSingle />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/log-in" element={<Login />} />
+        <Route path="/" element={<PrivateRoute><Home /></PrivateRoute>} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/dashboard" element={<DashBoard />} />
       </Routes>
     </Router>
     
