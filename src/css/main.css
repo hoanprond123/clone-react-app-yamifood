@@ -477,7 +477,10 @@
     right: 19px;
     top: 17px;
     cursor: pointer;
+    transition: var(--transition);
 }
+
+
 
 .home-gallery-modal-icon{
     cursor: pointer;
